@@ -4,7 +4,7 @@ Theme URI:    http://example.com/accelerate-theme-child/
 Description:  Accelerate Child Theme - Accelerate
 Author:   	Molly Golden
 Author URI:   http://example.com
-Template: 	accelerate-theme
+Template: 	Accelerate-theme
 Version:      2.0.0
 Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  accelerate-theme-child
@@ -12,6 +12,8 @@ Text Domain:  accelerate-theme-child
 
 
 
-.home-page {
-		    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover
-		}
+2
+3
+body {
+	background: red;
+}
