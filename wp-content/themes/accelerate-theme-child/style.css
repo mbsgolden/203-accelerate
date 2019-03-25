@@ -19,15 +19,110 @@ Text Domain:  accelerate-theme-child
 
 /* Case Studies Styles */
 .case-study{
+	float: left;
 	width: 100%;
 }
 
 .case-study-content {
 	float: left;
-	width: 30%;
+	width: 40%;
 }
 
 .case-study-images{
 	float: left;
-	width: 70%;
+	width: 60%;
 }
+
+.case-study-images {
+	padding-top: 20px;
+}
+
+/*Landing Page Featured Posts*/
+
+.site-content-featured-work{
+	text-align: center;
+	width: 100%;
+}
+
+.featured-posts {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+
+}
+
+.individual-featured-work{
+	list-style: none;
+
+}
+
+
+/* Case Studies Archive Page */
+
+.site-content-archive-page {
+	width: 100%;
+	margin-left: 250px;
+}
+
+.archive-post{
+	width: 100%;
+
+}
+
+.text-area {
+	float: left;
+	width: 30%;
+	margin-top: 40px;
+
+}
+
+.image-area{
+	float: left;
+	width: 70%;
+	margin-top: 40px;
+	height: auto;
+}
+
+
+/* Social Media Navigation */
+
+.nav-section {
+	display: flex;
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+.nav-section ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-flow: row nowrap;
+	margin-left: 80px;
+}
+
+.nav-section ul {
+	list-style: none;
+
+}
+
+.icons{
+	border: 2px solid grey;
+	border-radius: 50%;
+	padding: 5px;
+	margin: 8px;
+}
+
+/* <div class="nav-section">
+	<nav class="social-media-navigation" role="navigation">
+		<ul>
+			<li>
+				 <?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
+			</li>
+		</ul>
+	</nav>
+</div>

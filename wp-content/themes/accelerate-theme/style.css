@@ -701,6 +701,9 @@ a.button, a.button:link {
 	.social-media-navigation {
 		float: right;
 		width: 20%;
+
+
+
 	}
 }
 @media (min-width: 400px) {

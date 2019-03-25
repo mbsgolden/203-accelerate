@@ -14,10 +14,11 @@
 
 get_header(); ?>
 
-  <div id="primary" class="site-content sidebar">
+  <div id="primary" class="site-content">
 		<div class="main-content" role="main">
 
 			<?php while ( have_posts() ) : the_post();
+          $size = "full";
           $services = get_field('services');
           $client = get_field('client');
           $link = get_field('site_link');
@@ -27,28 +28,30 @@ get_header(); ?>
 
       <article class="case-study">
         <aside class="case-study-content">
-            <h2><span> <?php get_title(); ?> </span></h2>
+            <h2><span> <?php the_title(); ?> </span> </h2>
             <h5> <?php echo $services; ?> </h5>
             <h6> <?php echo $client; ?> </h6>
-            <p> This is a project I made for this company </p>
-            <p class="read-more-link"><a href="#"> Visit Live Site </a></p>
 
             <?php the_content(); ?>
 
-            <p> <a href="<?php echo $link; ?>" > Site Link </a>" <p>
-
+            <p> <a href="<?php echo $link; ?>" target="_blank" > Site Link </a> <p>
         </aside>
+
         <div class="case-study-images">
-          <img src ="<?php echo $image_1;?>" />
-          <img src ="<?php echo $image_2;?>" />
-          <img src ="<?php echo $image_3;?>" />
+          <?php if($image_1) {
+            echo wp_get_attachment_image( $image_1, $size );
+          } ?>
+          <img <?php if($image_2) {
+            echo wp_get_attachment_image( $image_2, $size );
+            } ?>
+          <img <?php if($image_3) {
+            echo wp_get_attachment_image( $image_3, $size );
+          } ?>
         </div>
       </article>
-      
+
 			<?php endwhile; // end of the loop. ?>
-	</div><!-- .main-content -->
-
-
+	   </div><!-- .main-content -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -18,10 +18,11 @@
 					<p><?php bloginfo('description'); ?></p>
 					<p>&copy; <?php bloginfo('title'); ?>, LLC
 				</div>
-
+      <div class="nav-section">
 				<nav class="social-media-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
 				</nav>
+			</div>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 
