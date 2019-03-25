@@ -87,42 +87,31 @@ Text Domain:  accelerate-theme-child
 
 /* Social Media Navigation */
 
-.nav-section {
-	display: flex;
-	width: 40%;
-	justify-content: center;
-	align-items: center;
+#menu-social-media-nav{
+	text-align: center;
 
+}
+.menu-social-media-nav-container ul li{
+list-style: none;
 }
 
 
-
-.nav-section ul {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-start;
-	flex-flow: row nowrap;
-	margin-left: 80px;
-}
-
-.nav-section ul {
-	list-style: none;
-
-}
-
-.icons{
-	border: 2px solid grey;
+#menu-item-47371, #menu-item-47372, #menu-item-47373 {
+  display: inline-block;
+	background: grey;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
-	padding: 5px;
-	margin: 8px;
+	border: 2px solid grey;
+	margin: 5px;
+	padding: 0;
+
 }
 
-/* <div class="nav-section">
-	<nav class="social-media-navigation" role="navigation">
-		<ul>
-			<li>
-				 <?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-			</li>
-		</ul>
-	</nav>
-</div>
+#menu-item-47371 a, #menu-item-47372 a, #menu-item-47373 a {
+color: white;
+margin: 0;
+padding: 0;
+
+
+}

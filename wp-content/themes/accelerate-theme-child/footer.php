@@ -20,11 +20,7 @@
 				</div>
         <div class="nav-section">
   				<nav class="social-media-navigation" role="navigation">
-            <ul>
-              <li>
-      					 <?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-              </li>
-            </ul>
+      			<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
     			</nav>
         </div>
 
