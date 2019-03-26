@@ -115,3 +115,32 @@ padding: 0;
 
 
 }
+
+
+/* Contact Me Page Styles */
+
+.site-content.sidebar {
+	width: 80%;
+}
+
+.nf-form-layout {
+	width: 100%;
+}
+
+
+#nf-field-1-container.nf-field-container.textbox-container.label-above {
+	clear: none;
+	width: 50%;
+	margin: 0;
+}
+
+#nf-field-2-container.nf-field-container.email-container.label-above {
+	clear: none;
+	width: 50%;
+	margin: 0;
+}
+
+#nf-field-4-wrap {
+	width: 30%;
+	float: right;
+}
